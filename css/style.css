@@ -158,6 +158,22 @@
 	background-color: var(--active-red);
 }
 
+/* catalog - button*/
+
+.button-sedona-buy {
+	width: 200px;
+	height: 50px;
+	background-color: var(--basik-red);
+}
+
+.button-sedona-buy:hover {
+	background-color: var(--hover-red);
+}
+
+.button-sedona-buy:active {
+	background-color: var(--active-red);
+}
+
 
 /* Navigation */
 
@@ -287,4 +303,29 @@
 	list-style: none;
 }
 
+/*Разметка файла catalog*/
 
+.catalog-title {
+	margin-top: -20px;
+	padding: 40px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.container ul {
+	list-style: none;
+}
+
+.catalog-list {
+	text-align: center;
+}
+
+.catalog-slider-list {
+	text-align: center;
+}
+
+.sedona-modal-cart {
+	background-color: var(--basik-gray);
+}
