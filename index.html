@@ -1,125 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+  
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-  	<header>
-  		<nav>
-  			<a>
+
+  <body class="page-body">
+
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
   				<img src="1.jpg" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
   				<li><a href="#">СТУДИЯ</a></li>
   				<li><a href="#">КЛИЕНТЫ</a></li>
   				<li><a href="catalog.html">МАГАЗИН</a></li>
   				<li><a href="#">КОНТАКТЫ</a></li>
   			</ul>
-  			<a href="#">КОРЗИНА</a>
+  			<a class="cart-link" href="#">КОРЗИНА</a>
   		</nav>
   	</header>
-  	<main>
+
+  	<main class="container">
+    <section class="features">
   		<h1>Дизайн-студия "Нёрдс"</h1>
-  		<section>
   			<h2>Преимущества</h2>
-  			<ul>
-  				<li>
-  					<h3>Долго, дорого, скрупулезно.</h3>
-  					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  					<button>Узнать больше</button>
-  				</li>
-  				<li>Фоновая картинка</li>
-  			</ul>
+  				<div class="features-content">
+  					<h3 class="features-slogan">Долго, дорого, скрупулезно.</h3>
+  					<p class="features-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  					<button class="button features-button">
+              <p class="button-text">Узнать больше</p>
+            </button>
+  				</div>
+  				<div class="features-img">Фоновая картинка</div>
   		</section>
-  		<section>
+
+  		<section class="services">
   			<h2>Наши услуги</h2>
-  			<ul>
-  				<li>
-  					<div>Иконка</div>
-  					<h3>ВЕБ-САЙТЫ</h3>
+  			<ul class="services-list">
+  				<li class="services-item">
+  					<div class="services-icon services-icon-websites">Иконка</div>
+  					<h3 class="services-title">ВЕБ-САЙТЫ</h3>
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<button>Заказать</button>
+  					<button class="button button-services button-services-websites">
+              <p class="button-text">Заказать</p>
+            </button>
   				</li>
-  				<li>
-  					<div>Иконка</div>
-  					<h3>ПРИЛОЖЕНИЯ</h3>
+  				<li class="services-item">
+  					<div class="services-icon services-icon-applications">Иконка</div>
+  					<h3 class="services-title">ПРИЛОЖЕНИЯ</h3>
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<button>Заказать</button>
+  					<button class="button button-services button-services-applications">
+              <p class="button-text">Заказать</p>
+            </button>
   				</li>
-  				<li>
-  					<div>Иконка</div>
-  					<h3>ПРЕЗЕНТАЦИИ</h3>
+  				<li class="services-item">
+  					<div class="services-icon services-icon-presentations">Иконка</div>
+  					<h3 class="services-title">ПРЕЗЕНТАЦИИ</h3>
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<button>Заказать</button>
+  					<button class="button button-services button-services-presentations">
+              <p class="button-text">Заказать</p>
+            </button>
   				</li>
   			</ul>
   		</section>
-  		<section>
+
+  		<section class="description">
+
   			<h2>О нас</h2>
-  			<div>
-  				<p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+
+  			<div class="description-content">
+  				<p class="description-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
   				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет ы превыше креатива. Работаем не покладая рук, как роботы.</p>
-  				<p>Выполняем заказы на разработку:</p>
-  				<ul>
-  					<li>Веб-сайтов любой сложности  </li>	
-  					<li>Мобильных приложений для iOS и Android  </li>
-  					<li>Слайдшоу и видео для корпоративных презентаций</li> 
+  				<p class="description-content-subtitle">Выполняем заказы на разработку:</p>
+  				<ul class="description-services-list">
+  					<li class="description-services-item">Веб-сайтов любой сложности  </li>	
+  					<li class="description-services-item">Мобильных приложений для iOS и Android  </li>
+  					<li class="description-services-item">Слайдшоу и видео для корпоративных презентаций</li> 
   				</ul>
   			</div>
-  			<div>
-  				<div>Логотип дизайн-студии</div>
-  				<p>с 2004 года Любим точность во всем:</p>
-  				<ul>
-  					<li>
-  						<p>146%</p>
+
+  			<div class="description-content">
+  				<div class="description-logo">Логотип дизайн-студии</div>
+  				<p class="description-content-subtitle">С 2004 года любим точность во всем:</p>
+  				<ul class="description-features-list">
+  					<li class="description-features-item">
+  						<p class="description-numbers">146<sup>%</sup></p>
   						<p>Уровень  самоотдачи</p>
   					</li>
-						<li>
-							<p>100%</p>
+						<li class="description-features-item">
+							<p class="description-numbers">100<sup>%</sup></p>
 							<p>Соблюдение  сроков</p>
 						</li>
-						<li>
-							<p>50%</p>
+						<li class="description-features-item">
+							<p class="description-numbers">50<sup>%</sup></p>
 							<p>Минимальная  предоплата</p>
 						</li>
   				</ul>
   			</div>
+
   		</section>
-  		<section>
+
+      <section class="clients">
+
   			<h2>Наши клиенты</h2>
-  			<ul>
-  				<li><a href="#">HTML Академия</a></li>
-					<li><a href="#">Барбершоп "Бородинский"</a></li>
-					<li><a href="#">Пинк</a></li>
-  				<li><a href="#">Мишка</a></li>			
+
+  			<ul class="clients-list">
+  				<li class="clients-item"><a href="#">HTML Академия</a></li>
+					<li class="clients-item"><a href="#">Барбершоп "Бородинский"</a></li>
+					<li class="clients-item"><a href="#">Пинк</a></li>
+  				<li class="clients-item"><a href="#">Мишка</a></li>			
   			</ul>
+
   		</section>
   	</main>
-  	<footer>
-  		<section>
+
+  	<footer class="page-footer main-footer">
+
+  		<section class="footer-maps">
   			<h2>Как нас найти на карте</h2>
   			<div>Наше расположение на карте</div>
+        <div>Метка на карте</div>
   		</section>
-  		<section>
+
+  		<section class="footer-contacts">
   			<h2>Наш адрес</h2>
-  			<h3>NЁRDS DESIGN STUDIO</h3>
-  			<p>
-  				191186, Санкт-Петербург,<br> 
-  				 ул. Б. Конюшенная, д. 19/8<br>  <br>
-  				тел. +7 (812) 275-75-75
-  			</p>	
-  			<button>Напишите нам</button>
+  			<h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
+  			<p class="footer-address">191186, Санкт-Петербург,<br> 
+  				 ул. Б. Конюшенная, д. 19/8<br><br>
+  			  тел. +7 (812) 275-75-75</p>
+  				
+  			<button class="button contacts-button">
+           <p class="button-text">Напишите нам</p>
+        </button>
   		</section>
-  		<section>
-  			<h2>Давайте дружить, это выгодно!</h2>
-  			<p>Скидка 10% для друзей из социальных сетей.</p>
-  			<ul>
-  				<li><a href="#">Вконтакте</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Инстаграм</a></li>
+
+  		<section class="footer-social">
+  			<h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
+  			<p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+  			<ul class="footer-social-list">
+  				<li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+					<li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+					<li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
   			</ul>
-  		</section>	
+  		</section>
+
   	</footer>
   </body>
 </html>
