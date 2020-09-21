@@ -17,9 +17,10 @@
   			<ul class="site-navigation">
   				<li><a href="index.html">СТУДИЯ</a></li>
   				<li><a href="#">КЛИЕНТЫ</a></li>
-  				<li><a href="catalog.html">Магазин</a></li>
+  				<li><a href="catalog.html">МАГАЗИН</a></li>
   				<li><a href="#">КОНТАКТЫ</a></li>
   			</ul>
+        <img src="img/cart-icon.png" width="15px" height="15px">
   			<a href="#" class="cart-link">КОРЗИНА</a>
   		</nav>
   	</header>
@@ -31,33 +32,96 @@
         </section>
 
   			<section>
-  				<h2>Фильтр товаров</h2>
+  				<h2 hidden>Фильтр товаров</h2>
   			</section>
 
   			<section>
-  				<h2>Готовые шаблоны</h2>
-  				<ul class="catalog-list">
-  					<li>
-  						<a href="#"><img src="2.jpg" width="50" alt="шаблон Седона"></a>
+  				<h2 hidden>Готовые шаблоны</h2>
+  				<ul class="catalog-nerds-list">
+  					<li class="catalog-item">
+  						<a href="#"><img src="img/img-sedona 1.png" width="358px" height="576px" alt="шаблон Седона"></a>
             </li>
-            <li class="sedona-modal-cart">
+            <li class="modal-cart">
   						<h4>Седона</h4>
   							<p>Информационный сайт для туристов</p>
   							<button class="button button-sedona-buy">
                   <p class="button-text">9 900 &#8381;</p>
                 </button>
   					</li>
-						<li><a href="#"><img src="3.jpg" width="50" alt="шаблон Pink"></a></li>
-						<li><a href="#"><img src="4.jpg" width="50" alt="шаблон Барбершоп 'Бородинский'"></a></li>
-						<li><a href="#"><img src="5.jpg" width="50" alt="шаблон Мишка"></a></li>
-						<li><a href="#"><img src="6.jpg" width="50" alt="шаблон Школа А+"></a></li>
-  					<li><a href="#"><img src="7.jpg" width="50" alt="шаблон Кваст"></a></li>			
+						<li class="catalog-nerds-item">
+              <a href="#">
+                <img src="img/img-pink 1.png" width="358px" height="576px" alt="шаблон Pink">
+              </a>
+            </li>
+            <li class="modal-cart">
+              <h4>PINK APP</h4>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <button class="button button-sedona-buy">
+                  <p class="button-text">9 900 &#8381;</p>
+                </button>
+            </li>
+						<li class="catalog-nerds-item">
+              <a href="#">
+                <img src="img/img-barbershop 1.png" width="358px" height="576px" alt="шаблон Барбершоп 'Бородинский'">
+              </a>
+            </li>
+            <li class="modal-cart">
+              <h4>Брбершоп "Бородинский"</h4>
+                <p>Сайт для барбершопа</p>
+                <button class="button button-sedona-buy">
+                  <p class="button-text">9 900 &#8381;</p>
+                </button>
+            </li>
+						<li class="catalog-nerds-item">
+              <a href="#">
+                <img src="img/img-mishka 1.png" width="358px" height="576px" alt="шаблон Мишка">
+              </a>
+            </li>
+            <li class="modal-cart">
+              <h4>Магазин игрушек "Мишка"</h4>
+                <p>Магазин вязанных игрушек</p>
+                <button class="button button-sedona-buy">
+                  <p class="button-text">9 900 &#8381;</p>
+                </button>
+            </li>
+						<li class="catalog-nerds-item">
+              <a href="#">
+                <img src="img/img-aplus 1.png" width="358px" height="576px" alt="шаблон Школа А+">
+              </a>
+            </li>
+            <li class="modal-cart">
+              <h4>A Plus</h4>
+                <p>Сайт языковой школы</p>
+                <button class="button button-sedona-buy">
+                  <p class="button-text">9 900 &#8381;</p>
+                </button>
+            </li>
+  					<li class="catalog-nerds-item">
+              <a href="#">
+                <img src="img/img-kvast 1.png" width="358px" height="576px" alt="шаблон Кваст">
+              </a>
+            </li>	
+            <li class="modal-cart">
+              <h4>Магазин "Кваст"</h4>
+                <p>Магазин безалкогольных напитков</p>
+                <button class="button button-sedona-buy">
+                  <p class="button-text">9 900 &#8381;</p>
+                </button>
+            </li>		
   				</ul>
   				<ul class="catalog-slider-list">
-  					<li><a>1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">Следующая</a></li>					
+  					<li class="catalog-slider-item">
+              <a>1</a>
+            </li>
+						<li class="catalog-slider-item">
+              <a href="#">2</a>
+            </li>
+						<li class="catalog-slider-item">
+              <a href="#">3</a>
+            </li>
+						<li class="catalog-slider-item-next">
+              <a href="#">Следующая</a>
+            </li>					
   				</ul>
   			</section>
 
@@ -66,13 +130,14 @@
   	<footer class="page-footer main-footer">
 
   		<section class="footer-maps">
-  			<h2>Как нас найти на карте</h2>
-  			<div>Наше расположение на карте</div>
-        <div>Метка на карте</div>
-  		</section>
+        <h2 hidden>Как нас найти на карте</h2>
+        <div class="map">
+        </div>
+        <div class="map-marker"></div>
+      </section>
 
   		<section class="footer-contacts">
-  			<h2>Наш адрес</h2>
+  			<h2 hidden>Наш адрес</h2>
   			<h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
   			<p class="footer-address">
   				191186, Санкт-Петербург,<br> 
@@ -89,13 +154,19 @@
         <p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
         <ul class="footer-social-list">
           <li>
-            <a class="social-button" href="#">Вконтакте</a>
+            <a class="social-button" href="#">
+              <img src="img/vk-icon.png">
+            </a>
           </li>
           <li>
-            <a class="social-button" href="#">Фейсбук</a>
+            <a class="social-button" href="#">
+              <img src="img/fb-icon.png">
+            </a>
           </li>
           <li>
-            <a class="social-button" href="#">Инстаграм</a>
+            <a class="social-button" href="#">
+              <img src="img/insta-icon.png">
+            </a>
           </li>
         </ul>
       </section>

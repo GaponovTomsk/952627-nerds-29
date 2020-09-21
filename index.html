@@ -12,7 +12,7 @@
 
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a class="main-header-logo">
+  			<a href="#" class="main-header-logo">
   				<img src="img/nerds-logo.png" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'">
   			</a>
   			<ul class="site-navigation">
@@ -21,14 +21,15 @@
   				<li><a href="catalog.html">МАГАЗИН</a></li>
   				<li><a href="#">КОНТАКТЫ</a></li>
   			</ul>
+        <img src="img/cart-icon.png" width="15px" height="15px">
   			<a class="cart-link" href="#">КОРЗИНА</a>
   		</nav>
   	</header>
 
   	<main class="container">
     <section class="features">
-  		<h1>Дизайн-студия "Нёрдс"</h1>
-  			<h2>Преимущества</h2>
+  		<h1 hidden>Дизайн-студия "Нёрдс"</h1>
+  			<h2 hidden>Преимущества</h2>
   				<div class="features-content">
   					<h3 class="features-slogan">Долго, дорого, скрупулезно.</h3>
   					<p class="features-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -36,14 +37,14 @@
               <p class="button-text">Узнать больше</p>
             </button>
   				</div>
-  				<div class="features-img">Фоновая картинка</div>
+  				<div class="features-img"></div>
   		</section>
 
   		<section class="services">
-  			<h2>Наши услуги</h2>
+  			<h2 hidden>Наши услуги</h2>
   			<ul class="services-list">
   				<li class="services-item">
-  					<div class="services-icon services-icon-websites">Иконка</div>
+  					<div class="services-icon services-icon-websites"></div>
   					<h3 class="services-title">ВЕБ-САЙТЫ</h3>
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<button class="button button-services button-services-websites">
@@ -51,7 +52,7 @@
             </button>
   				</li>
   				<li class="services-item">
-  					<div class="services-icon services-icon-applications">Иконка</div>
+  					<div class="services-icon services-icon-applications"></div>
   					<h3 class="services-title">ПРИЛОЖЕНИЯ</h3>
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
   					<button class="button button-services button-services-applications">
@@ -59,7 +60,7 @@
             </button>
   				</li>
   				<li class="services-item">
-  					<div class="services-icon services-icon-presentations">Иконка</div>
+  					<div class="services-icon services-icon-presentations"></div>
   					<h3 class="services-title">ПРЕЗЕНТАЦИИ</h3>
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
   					<button class="button button-services button-services-presentations">
@@ -71,7 +72,7 @@
 
   		<section class="description">
 
-  			<h2>О нас</h2>
+  			<h2 hidden>О нас</h2>
 
   			<div class="description-content">
   				<p class="description-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -85,7 +86,7 @@
   			</div>
 
   			<div class="description-content">
-  				<div class="description-logo">Логотип дизайн-студии</div>
+  				<div class="description-logo"></div>
   				<p class="description-content-subtitle">С 2004 года любим точность во всем:</p>
   				<ul class="description-features-list">
   					<li class="description-features-item">
@@ -107,13 +108,29 @@
 
       <section class="clients">
 
-  			<h2>Наши клиенты</h2>
+  			<h2 hidden>Наши клиенты</h2>
 
   			<ul class="clients-list">
-  				<li class="clients-item"><a href="#">HTML Академия</a></li>
-					<li class="clients-item"><a href="#">Барбершоп "Бородинский"</a></li>
-					<li class="clients-item"><a href="#">Пинк</a></li>
-  				<li class="clients-item"><a href="#">Мишка</a></li>			
+  				<li class="clients-item">
+            <a href="#">
+              <img src="img/Group 5.png" width="199px" height="68px" alt="HTML Academy">
+            </a>
+          </li>
+					<li class="clients-item">
+            <a href="#">
+              <img src="img/logo-2 1.png" width="209px" height="90px" alt="Барбершоп 'Бородинский'">
+            </a>
+          </li>
+					<li class="clients-item">
+            <a href="#">
+              <img src="img/logo-3 1.png" width="185px" height="52px" alt="Приложение PINK">
+            </a>
+          </li>
+  				<li class="clients-item">
+            <a href="#">
+              <img src="img/logo-4 1.png" width="173px" height="84px" alt="Магазин игрушек Мишка">
+            </a>
+          </li>			
   			</ul>
 
   		</section>
@@ -122,13 +139,14 @@
   	<footer class="page-footer main-footer">
 
   		<section class="footer-maps">
-  			<h2>Как нас найти на карте</h2>
-  			<div>Наше расположение на карте</div>
-        <div>Метка на карте</div>
+  			<h2 hidden>Как нас найти на карте</h2>
+        <div class="map">
+        </div>
+        <div class="map-marker"></div>
   		</section>
 
   		<section class="footer-contacts">
-  			<h2>Наш адрес</h2>
+  			<h2 hidden>Наш адрес</h2>
   			<h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
   			<p class="footer-address">191186, Санкт-Петербург,<br> 
   				 ул. Б. Конюшенная, д. 19/8<br><br>
@@ -144,13 +162,19 @@
   			<p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
   			<ul class="footer-social-list">
   				<li>
-            <a class="social-button" href="#">Вконтакте</a>
+            <a class="social-button" href="#">
+              <img src="img/vk-icon.png">
+            </a>
           </li>
 					<li>
-            <a class="social-button" href="#">Фейсбук</a>
+            <a class="social-button" href="#">
+              <img src="img/fb-icon.png">
+            </a>
           </li>
 					<li>
-            <a class="social-button" href="#">Инстаграм</a>
+            <a class="social-button" href="#">
+              <img src="img/insta-icon.png">
+            </a>
           </li>
   			</ul>
   		</section>

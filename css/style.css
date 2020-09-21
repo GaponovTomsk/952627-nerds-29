@@ -85,7 +85,9 @@
 }
 
 
-
+.button:hover {
+	cursor: pointer;
+}
 
 .button-text:active {
 	opacity: 0.3;
@@ -190,6 +192,7 @@
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--basik-black);
+	padding-bottom: 40px;
 }
 
 .main-navigation a:hover {
@@ -213,10 +216,18 @@
 }
 
 .features-slogan {
+	margin-top: -20px;
+	padding-top: 50px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color: var(--basik-black);
+}
+
+.features-img {
+	background-image: url(../img/nerds-index-slide1.png);
+	width: 760px;
+	height: 431px;
 }
 
 /* Services */
@@ -236,6 +247,32 @@
 	text-align: center;
 }
 
+.services-icon-websites {
+	background-image: url(../img/illustration-1.png);
+	width: 300px;
+	height: 146px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services-icon-applications {
+	background-image: url(../img/illustration-2.png);
+	width: 300px;
+	height: 146px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services-icon-presentations {
+	background-image: url(../img/illustration-3.png);
+	width: 300px;
+	height: 146px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Description */
 
 .description-content-title {
@@ -250,6 +287,12 @@
 	font-size: 16px;
 	line-height: 24px;
 	text-transform: uppercase;
+}
+
+.description-logo {
+	background-image: url(../img/nerds-illustration_1.png);
+	width: 360px;
+	height: 208px;
 }
 
 .description-features-list {
@@ -274,8 +317,31 @@
 	list-style: none;
 }
 
+.clients-item {
+	text-align: center;
+	padding-top: 20px;
+}
+
 
 /* page-footer */
+
+.map {
+	background-image: url(../img/map_1.jpg);
+	width: 1440px;
+	height: 416px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.map-marker {
+	background-image: url(../img/map-marker_1.png);
+	width: 231px;
+	height: 190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .footer-contacts-title {
 	font-weight: bold;
 	font-size: 18px;
@@ -304,7 +370,27 @@
 
 .footer-social-list {
 	list-style: none;
+
 }
+
+.social-button {
+	display: inline-block;
+	padding: 20px;
+	width: 30px;
+	height: 30px;
+	background-color: #E1E1E1;
+	border-radius: 50%;
+}
+
+.social-button:hover {
+	background-color: var(--hover-red);
+}
+
+.social-button:active {
+	background-color: var(--active-red);
+}
+
+
 
 /*Разметка файла catalog*/
 
@@ -321,15 +407,55 @@
 	list-style: none;
 }
 
-.catalog-list {
+.catalog-nerds-list {
 	text-align: center;
+}
+
+.catalog-nerds-item {
+	padding-top: 40px;
 }
 
 .catalog-slider-list {
 	text-align: center;
 }
 
-.sedona-modal-cart {
+.catalog-slider-item {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #EEEEEE;
+	border-radius: 3px;
+}
+
+
+.catalog-slider-item:hover {
+	background-color: #DFDFDF;
+}
+
+
+.catalog-slider-item:active {
+	border: 3px solid #DBDBDB;
+	background-color: #fff;
+}
+
+.catalog-slider-item-next {
+	display: inline-block;
+	width: 260px;
+	height: 50px;
+	background: #EEEEEE;
+	border-radius: 3px;
+}
+
+.catalog-slider-item-next:hover {
+	background-color: #DFDFDF;
+}
+
+.catalog-slider-item-next:active {
+	border: 3px solid #DBDBDB;
+	background-color: #fff;
+}
+
+.modal-cart {
 	width: 360px;
 	margin-left: auto;
 	margin-right: auto;
