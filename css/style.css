@@ -330,5 +330,8 @@
 }
 
 .sedona-modal-cart {
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: var(--basik-gray);
 }
