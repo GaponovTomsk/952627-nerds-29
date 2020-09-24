@@ -12,24 +12,29 @@
 
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a href="#" class="main-header-logo">
-  				<img src="img/nerds-logo.png" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'">
-  			</a>
-  			<ul class="site-navigation">
-  				<li><a href="#">СТУДИЯ</a></li>
-  				<li><a href="#">КЛИЕНТЫ</a></li>
-  				<li><a href="catalog.html">МАГАЗИН</a></li>
-  				<li><a href="#">КОНТАКТЫ</a></li>
-  			</ul>
-        <img src="img/cart-icon.png" width="15px" height="15px">
-  			<a class="cart-link" href="#">КОРЗИНА</a>
+      <div class="main-navigation-wrapper">
+      <div class="header-nerd-logo">
+  			<a href="#" class="main-header-logo"><img src="img/nerds-logo.png" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'"></a>
+      </div>
+    			<ul class="site-navigation">
+    				<li><a href="#">СТУДИЯ</a></li>
+    				<li><a href="#">КЛИЕНТЫ</a></li>
+    				<li><a href="catalog.html">МАГАЗИН</a></li>
+    				<li><a href="#">КОНТАКТЫ</a></li>
+    			</ul>
+          <div class="user-navigation">
+            <img src="img/cart-icon.svg" width="15px" height="15px">
+      			<a class="cart-link" href="#">КОРЗИНА</a>
+          </div>
+        </div>
   		</nav>
   	</header>
 
-  	<main class="container">
+  <main class="container">
     <section class="features">
-  		<h1 hidden>Дизайн-студия "Нёрдс"</h1>
-  			<h2 hidden>Преимущества</h2>
+  		<h1 class="hidden-title">Дизайн-студия "Нёрдс"</h1>
+  			<h2 class="hidden-title">Преимущества</h2>
+        <div class="features-container">
   				<div class="features-content">
   					<h3 class="features-slogan">Долго, дорого, скрупулезно.</h3>
   					<p class="features-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -38,10 +43,11 @@
             </button>
   				</div>
   				<div class="features-img"></div>
+        </div>
   		</section>
 
   		<section class="services">
-  			<h2 hidden>Наши услуги</h2>
+  			<h2 class="hidden-title">Наши услуги</h2>
   			<ul class="services-list">
   				<li class="services-item">
   					<div class="services-icon services-icon-websites"></div>
@@ -72,85 +78,78 @@
 
   		<section class="description">
 
-  			<h2 hidden>О нас</h2>
+  			<h2 class="hidden-title">О нас</h2>
+        <div class="description-container">
+    			<div class="description-content">
+    				<p class="description-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+    				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.</p>
+    				<p class="description-content-subtitle">Выполняем заказы на разработку:</p>
+    				<ul class="description-services-list">
+    					<li class="description-services-item">Веб-сайтов любой сложности  </li>	
+    					<li class="description-services-item">Мобильных приложений для iOS и Android  </li>
+    					<li class="description-services-item">Слайдшоу и видео для корпоративных презентаций</li> 
+    				</ul>
+    			</div>
 
-  			<div class="description-content">
-  				<p class="description-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-  				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет ы превыше креатива. Работаем не покладая рук, как роботы.</p>
-  				<p class="description-content-subtitle">Выполняем заказы на разработку:</p>
-  				<ul class="description-services-list">
-  					<li class="description-services-item">Веб-сайтов любой сложности  </li>	
-  					<li class="description-services-item">Мобильных приложений для iOS и Android  </li>
-  					<li class="description-services-item">Слайдшоу и видео для корпоративных презентаций</li> 
-  				</ul>
-  			</div>
-
-  			<div class="description-content">
-  				<div class="description-logo"></div>
-  				<p class="description-content-subtitle">С 2004 года любим точность во всем:</p>
-  				<ul class="description-features-list">
-  					<li class="description-features-item">
-  						<p class="description-numbers">146<sup>%</sup></p>
-  						<p>Уровень  самоотдачи</p>
-  					</li>
-						<li class="description-features-item">
-							<p class="description-numbers">100<sup>%</sup></p>
-							<p>Соблюдение  сроков</p>
-						</li>
-						<li class="description-features-item">
-							<p class="description-numbers">50<sup>%</sup></p>
-							<p>Минимальная  предоплата</p>
-						</li>
-  				</ul>
-  			</div>
-
+    			<div class="description-content">
+    				<div class="description-logo"></div>
+    				<p class="description-content-subtitle">С 2004 года любим точность во всем:</p>
+    				<ul class="description-features-list">
+    					<li class="description-features-item">
+    						<p class="description-numbers">146<sup>%</sup></p>
+    						<p>Уровень  самоотдачи</p>
+    					</li>
+  						<li class="description-features-item">
+  							<p class="description-numbers">100<sup>%</sup></p>
+  							<p>Соблюдение  сроков</p>
+  						</li>
+  						<li class="description-features-item">
+  							<p class="description-numbers">50<sup>%</sup></p>
+  							<p>Минимальная  предоплата</p>
+  						</li>
+    				</ul>
+    			</div>
+      </div>
   		</section>
 
       <section class="clients">
 
-  			<h2 hidden>Наши клиенты</h2>
+  			<h2 class="hidden-title">Наши клиенты</h2>
 
   			<ul class="clients-list">
   				<li class="clients-item">
-            <a href="#">
-              <img src="img/Group 5.png" width="199px" height="68px" alt="HTML Academy">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/Group 5.png" width="199px" height="68px" alt="HTML Academy"></a>
           </li>
 					<li class="clients-item">
-            <a href="#">
-              <img src="img/logo-2 1.png" width="209px" height="90px" alt="Барбершоп 'Бородинский'">
-            </a>
+            <a href="#"><img src="img/logo-2 1.png" width="209px" height="90px" alt="Барбершоп 'Бородинский'"></a>
           </li>
 					<li class="clients-item">
-            <a href="#">
-              <img src="img/logo-3 1.png" width="185px" height="52px" alt="Приложение PINK">
-            </a>
+            <a href="#"><img src="img/logo-3 1.png" width="185px" height="52px" alt="Приложение PINK"></a>
           </li>
   				<li class="clients-item">
-            <a href="#">
-              <img src="img/logo-4 1.png" width="173px" height="84px" alt="Магазин игрушек Мишка">
-            </a>
+            <a href="#"><img src="img/logo-4 1.png" width="173px" height="84px" alt="Магазин игрушек Мишка"></a>
           </li>			
   			</ul>
 
   		</section>
-  	</main>
+  </main>
 
   	<footer class="page-footer main-footer">
 
   		<section class="footer-maps">
-  			<h2 hidden>Как нас найти на карте</h2>
+  			<h2 class="hidden-title">Как нас найти на карте</h2>
         <div class="map">
         </div>
         <div class="map-marker"></div>
   		</section>
 
   		<section class="footer-contacts">
-  			<h2 hidden>Наш адрес</h2>
+  			<h2 class="hidden-title">Наш адрес</h2>
   			<h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
   			<p class="footer-address">191186, Санкт-Петербург,<br> 
   				 ул. Б. Конюшенная, д. 19/8<br><br>
-  			  тел. +7 (812) 275-75-75</p>
+  			  <a href="+78122757575">тел. +7 (812) 275-75-75</a>
+        </p>
   				
   			<button class="button contacts-button">
            <p class="button-text">Напишите нам</p>
@@ -158,27 +157,26 @@
   		</section>
 
   		<section class="footer-social">
-  			<h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
-  			<p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
-  			<ul class="footer-social-list">
-  				<li>
-            <a class="social-button" href="#">
-              <img src="img/vk-icon.png">
-            </a>
-          </li>
-					<li>
-            <a class="social-button" href="#">
-              <img src="img/fb-icon.png">
-            </a>
-          </li>
-					<li>
-            <a class="social-button" href="#">
-              <img src="img/insta-icon.png">
-            </a>
-          </li>
-  			</ul>
-  		</section>
-
+        <div class="footer-social-container">
+          <div>
+    			<ul class="footer-social-list">
+    				<li>
+              <a class="social-item" href="#"><img src="img/vk-icon.svg"></a>
+            </li>
+  					<li>
+              <a class="social-item" href="#"><img src="img/fb-icon.svg"></a>
+            </li>
+  					<li>
+              <a class="social-item" href="#"><img src="img/insta-icon.svg"></a>
+            </li>
+    			</ul>
+        </div>
+        <div>
+    		<h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
+          <p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+      </section>
   	</footer>
   </body>
 </html>

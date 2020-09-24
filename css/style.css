@@ -64,6 +64,7 @@
 	color: var(--light-black);
 }
 
+
 .page-body a {
 	text-decoration: none;
 	color: var(--basik-black);
@@ -72,6 +73,18 @@
 .page-body img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Grid */
+.page {
+	height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+}
+
+.page-body {
+	min-height: 100%;
 }
 
 
@@ -180,6 +193,10 @@
 }
 
 
+.hidden-title {
+	display: none;
+}
+
 /* Navigation */
 
 .main-header {
@@ -187,12 +204,21 @@
 
 }
 
+
+.main-navigation-wrapper {
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	width:940px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
 .main-navigation {
+	display: grid;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--basik-black);
-	padding-bottom: 40px;
 }
 
 .main-navigation a:hover {
@@ -207,17 +233,26 @@
 	list-style: none;
 }
 
+/* Container */
+.container {
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 
 /* Features */
 
 .features {
 	background-color: var(--basik-gray);
-	margin-top: -22px;
+}
+
+.features-container{
+	display:grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 .features-slogan {
-	margin-top: -20px;
-	padding-top: 50px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
@@ -240,18 +275,24 @@
 }
 
 .services-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .services-item{
-	text-align: center;
+	text-align: left;
 }
 
 .services-icon-websites {
 	background-image: url(../img/illustration-1.png);
 	width: 300px;
 	height: 146px;
-	margin-left: auto;
+	margin-top: 20px;
+	margin-left: 0;
 	margin-right: auto;
 }
 
@@ -260,7 +301,7 @@
 	width: 300px;
 	height: 146px;
 	margin-top: 20px;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 }
 
@@ -269,11 +310,18 @@
 	width: 300px;
 	height: 146px;
 	margin-top: 20px;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 }
 
 /* Description */
+
+.description-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 50px;
+	margin-top: 50px;
+}
 
 .description-content-title {
 	font-weight: 500;
@@ -314,7 +362,11 @@
 /* clients */
 
 .clients-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .clients-item {
@@ -324,6 +376,12 @@
 
 
 /* page-footer */
+
+.page-footer {
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 
 .map {
 	background-image: url(../img/map_1.jpg);
@@ -340,6 +398,11 @@
 	height: 190px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.footer-social-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 .footer-contacts-title {
@@ -373,7 +436,7 @@
 
 }
 
-.social-button {
+.social-item {
 	display: inline-block;
 	padding: 20px;
 	width: 30px;
@@ -382,17 +445,22 @@
 	border-radius: 50%;
 }
 
-.social-button:hover {
+.social-item:hover {
 	background-color: var(--hover-red);
 }
 
-.social-button:active {
+.social-item:active {
 	background-color: var(--active-red);
 }
 
 
 
 /*Разметка файла catalog*/
+
+.page-catalog {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+}
 
 .catalog-title {
 	margin-top: -20px;
@@ -401,6 +469,11 @@
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
+}
+
+.index-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container ul {
@@ -415,11 +488,11 @@
 	padding-top: 40px;
 }
 
-.catalog-slider-list {
+.catalog-pagination-list {
 	text-align: center;
 }
 
-.catalog-slider-item {
+.catalog-pagination-item {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -428,17 +501,17 @@
 }
 
 
-.catalog-slider-item:hover {
+.catalog-pagination-item:hover {
 	background-color: #DFDFDF;
 }
 
 
-.catalog-slider-item:active {
+.catalog-pagination-item:active {
 	border: 3px solid #DBDBDB;
 	background-color: #fff;
 }
 
-.catalog-slider-item-next {
+.catalog-pagination-item-next {
 	display: inline-block;
 	width: 260px;
 	height: 50px;
@@ -446,11 +519,11 @@
 	border-radius: 3px;
 }
 
-.catalog-slider-item-next:hover {
+.catalog-pagination-item-next:hover {
 	background-color: #DFDFDF;
 }
 
-.catalog-slider-item-next:active {
+.catalog-pagination-item-next:active {
 	border: 3px solid #DBDBDB;
 	background-color: #fff;
 }
