@@ -392,6 +392,7 @@
 /* page-footer */
 
 .page-footer {
+	position: relative;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -418,6 +419,15 @@
 	grid-template-columns: 1fr 2fr;
 }
 
+.footer-contacts {
+	position: absolute;
+	bottom: 574px;
+	left: 360px;
+	width: 312px;
+	height: 308px;
+	background-color: var(--basik-white);
+}
+
 .footer-contacts-title {
 	font-weight: bold;
 	font-size: 18px;
@@ -431,6 +441,7 @@
 	line-height: 18px;
 	color:var(--dark-gray);
 }
+
 
 .footer-social-title {
 	font-size: 36px;
