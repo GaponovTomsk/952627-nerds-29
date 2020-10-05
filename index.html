@@ -23,7 +23,6 @@
     				<li><a href="#">КОНТАКТЫ</a></li>
     			</ul>
           <div class="user-navigation">
-            <img src="img/cart-icon.svg" width="15px" height="15px">
       			<a class="cart-link" href="#">КОРЗИНА</a>
           </div>
         </div>
@@ -33,8 +32,8 @@
   <main>
     <section class="features">
       <div class="container">
-  		<h1 class="hidden-title">Дизайн-студия "Нёрдс"</h1>
-  			<h2 class="hidden-title">Преимущества</h2>
+  		<h1 class="visualy-hidden">Дизайн-студия "Нёрдс"</h1>
+  			<h2 class="visualy-hidden">Преимущества</h2>
         <div class="features-container">
   				<div class="features-content">
   					<h3 class="features-slogan">Долго, дорого, скрупулезно.</h3>
@@ -49,7 +48,7 @@
       </section>
   		<section class="services">
         <div class="container">
-  			<h2 class="hidden-title">Наши услуги</h2>
+  			<h2 class="visualy-hidden">Наши услуги</h2>
   			<ul class="services-list">
   				<li class="services-item">
   					<div class="services-icon services-icon-websites"></div>
@@ -80,7 +79,7 @@
   		</section>
   		<section class="description">
         <div class="container">
-    			<h2 class="hidden-title">О нас</h2>
+    			<h2 class="visualy-hidden">О нас</h2>
           <div class="description-container">
       			<div class="description-content">
       				<p class="description-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -115,45 +114,46 @@
   		</section>
       <section class="clients">
         <div class="container">
-  			<h2 class="hidden-title">Наши клиенты</h2>
-
+  			<h2 class="visualy-hidden">Наши клиенты</h2>
   			<ul class="clients-list">
   				<li class="clients-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/Group 5.png" width="199px" height="68px" alt="HTML Academy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy.png" width="199px" height="68px" alt="HTML Academy"></a>
           </li>
 					<li class="clients-item">
-            <a href="#"><img src="img/logo-2 1.png" width="209px" height="90px" alt="Барбершоп 'Бородинский'"></a>
+            <a href="#"><img src="img/logo-borodinski.png" width="209px" height="90px" alt="Барбершоп 'Бородинский'"></a>
           </li>
 					<li class="clients-item">
-            <a href="#"><img src="img/logo-3 1.png" width="185px" height="52px" alt="Приложение PINK"></a>
+            <a href="#"><img src="img/logo-pink.png" width="185px" height="52px" alt="Приложение PINK"></a>
           </li>
   				<li class="clients-item">
-            <a href="#"><img src="img/logo-4 1.png" width="173px" height="84px" alt="Магазин игрушек Мишка"></a>
+            <a href="#"><img src="img/logo-mishka.png" width="173px" height="84px" alt="Магазин игрушек Мишка"></a>
           </li>			
   			</ul>
       </div>
   		</section>
   </main>
   	<footer class="page-footer main-footer">
-  		<section class="footer-maps">
-  			<h2 class="hidden-title">Как нас найти на карте</h2>
+  		
+      <section class="footer-maps">
+  			<h2 class="visualy-hidden">Как нас найти на карте</h2>
         <div class="map">
         </div>
-        <div class="map-marker"></div>
-  		</section>
-  		<section class="footer-contacts">
         <div class="container">
-  			<h2 class="hidden-title">Наш адрес</h2>
-  			<h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
-  			<p class="footer-address">191186, Санкт-Петербург,<br> 
-  				 ул. Б. Конюшенная, д. 19/8<br><br>
-  			  <a href="+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-  			<button class="button contacts-button">
-           <p class="button-text">Напишите нам</p>
-        </button>
-      </div>
-  		</section>
+        <div class="footer-contacts">
+          <h2 class="visualy-hidden">Наш адрес</h2>
+          <h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="footer-address">191186, Санкт-Петербург,<br> 
+             ул. Б. Конюшенная, д. 19/8<br><br>
+            <a href="+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <button class="button contacts-button">
+             <p class="button-text">Напишите нам</p>
+          </button>
+        </div>
+        <div class="map-marker"></div>
+        </div>
+      </section>
+  
   		<section class="footer-social">
         <div class="footer-social-container container">
           <div>
@@ -176,5 +176,26 @@
       </div>
       </section>
   	</footer>
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form>
+        <div>
+          <p>Ваше имя:</p>
+          <label class="visually-hidden" for="login-name"></label>
+          <input id="login-name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <p>Ваш email:</p>
+          <label class="visually-hidden" for="login-login"></label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+         </div>
+         <div>
+          <p>Текст письма:</p>
+          <textarea name="comment" placeholder="В свободной форме"></textarea>
+         </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>

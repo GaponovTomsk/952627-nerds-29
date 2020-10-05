@@ -20,22 +20,98 @@
               <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
             <div class="user-navigation">
-              <img src="img/cart-icon.svg" width="15px" height="15px">
               <a class="cart-link" href="#">КОРЗИНА</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
+      <main>
+
       <section class="features">
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      </section>
-      <main class="page-catalog container">
+        <div class="container">
+          <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        </div>
+       </section>
+      <div class="page-catalog container">
         <section class="filters">
-  				<h2>Фильтр товаров</h2>
+  				<h2 class="visualy-hidden">Фильтр товаров</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>СТОИМОСТЬ:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                    width: 30%; 
+                    margin-left: 20%; 
+                    "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%; 
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%; 
+                  "></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                   <label class="max-price">
+                     до <input type="number" name="max-price" value="15000">
+                   </label>
+                </div>
+              </div> 
+            </fieldset>
+            <fieldset>
+              <legend>СЕТКА:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="adaptive" id="filter-adaptive">
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visualy-hidden filter-input-radio filter-input"  name="type-of-grid" type="radio"  value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>          
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>ОСОБЕННОСТИ:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="slider" type="checkbox" id="filter-slider">
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="preferences-block" type="checkbox" id="filter-preferences-box">
+                  <label for="filter-preferences-box">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="news" type="checkbox" id="filter-news">
+                  <label for="filter-news">Новости</label>
+                </li>
+                 <li class="filter-option filter-checkbox">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="gallery" type="checkbox" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                 </li>
+                 <li class="filter-option filter-checkbox">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="curt" type="checkbox" id="filter-curt">
+                  <label for="filter-curt">Корзина</label> 
+                 </li>
+              </ul>
+            </fieldset>
+            <button class="filter-button" type="submit">Показать</button>
+          </form>
   			</section>
   			<section class="catalog">
-  				<h2 class="hidden-title">Готовые шаблоны</h2>
+  				<h2 class="visualy-hidden">Готовые шаблоны</h2>
   				<ul class="catalog-nerds-list">
   					<li class="catalog-nerds-item">
   						<a href="#"><img src="img/img-sedona-catalog.png" width="358px" height="576px" alt="шаблон Седона"></a>
@@ -105,27 +181,30 @@
 						<li class="catalog-pagination-item-next"><a href="#">Следующая</a></li>					
   				</ul>
   			</section>
+      </div>
   	</main>
   	<footer class="page-footer main-footer">
-      <section class="footer-maps">
-        <h2 class="hidden-title">Как нас найти на карте</h2>
+     
+       <section class="footer-maps">
+        <h2 class="visualy-hidden">Как нас найти на карте</h2>
         <div class="map">
         </div>
-        <div class="map-marker"></div>
-      </section>
-      <section class="footer-contacts">
         <div class="container">
-        <h2 class="hidden-title">Наш адрес</h2>
-        <h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
-        <p class="footer-address">191186, Санкт-Петербург,<br> 
-           ул. Б. Конюшенная, д. 19/8<br><br>
-          <a href="+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-        <button class="button contacts-button">
-           <p class="button-text">Напишите нам</p>
-        </button>
-      </div>
+        <div class="footer-contacts">
+          <h2 class="visualy-hidden">Наш адрес</h2>
+          <h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="footer-address">191186, Санкт-Петербург,<br> 
+             ул. Б. Конюшенная, д. 19/8<br><br>
+            <a href="+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <button class="button contacts-button">
+             <p class="button-text">Напишите нам</p>
+          </button>
+        </div>
+        <div class="map-marker"></div>
+        </div>
       </section>
+
       <section class="footer-social">
         <div class="footer-social-container container">
           <div>
@@ -149,3 +228,4 @@
       </section>
     </footer>
   </body>
+  </html>
