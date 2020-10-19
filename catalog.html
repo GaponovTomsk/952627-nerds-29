@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс -- Магазин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
+      <div class="container">
+       <nav class="main-navigation">
           <div class="header-nerd-logo">
             <a href="index.html" class="main-header-logo"><img src="img/nerds-logo.png" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'"></a>
           </div>
-            <ul class="site-navigation">
-              <li><a href="index.html">СТУДИЯ</a></li>
-              <li><a href="#">КЛИЕНТЫ</a></li>
-              <li><a href="catalog.html">МАГАЗИН</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>
-            </ul>
-            <div class="user-navigation">
-              <a class="cart-link" href="#">КОРЗИНА</a>
-            </div>
+          <ul class="site-navigation">
+            <li><a href="index.html">СТУДИЯ</a></li>
+            <li><a href="#">КЛИЕНТЫ</a></li>
+            <li><a href="#">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="cart-link" href="#">КОРЗИНА</a>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
       <main>
       <section class="features">
@@ -42,15 +42,15 @@
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar" style="
-                    width: 30%; 
-                    margin-left: 20%; 
+                    width: 60%; 
+                    margin-left: 7%; 
                     "></div>
                   </div>
                   <div class="toggle toggle-min" tabindex="0" style="
-                  left: 20%; 
+                  left: 7%; 
                   "></div>
                   <div class="toggle toggle-max" tabindex="0" style="
-                  left: 50%; 
+                  left: 62%; 
                   "></div>
                 </div>
                 <div class="price-controls">
@@ -67,7 +67,7 @@
               <legend>СЕТКА:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="adaptive" id="filter-adaptive">
+                  <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
@@ -84,7 +84,7 @@
               <legend>ОСОБЕННОСТИ:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
-                  <input class="visualy-hidden filter-input-checkbox filter-input" name="slider" type="checkbox" id="filter-slider">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="slider" type="checkbox" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option filter-checkbox">
@@ -92,7 +92,7 @@
                   <label for="filter-preferences-box">Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="visualy-hidden filter-input-checkbox filter-input" name="news" type="checkbox" id="filter-news">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="news" type="checkbox" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
                  <li class="filter-option filter-checkbox">
@@ -105,7 +105,7 @@
                  </li>
               </ul>
             </fieldset>
-            <button class="button filter-button" type="submit"><p>Показать</p></button>
+            <button class="button filter-button" type="submit"><span>ПОКАЗАТЬ</span></button>
           </form>
   			</section>
   		 <section class="catalog">
@@ -125,67 +125,67 @@
   				<ul class="catalog-nerds-list">
   					<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-  						<a href="#"><img src="img/img-sedona-catalog.png" width="358px" height="576px" alt="Информационный сайт для туристов"></a>
+  						<a href="#"><img src="img/img-sedona-catalog.png" width="358" height="576" alt=""></a>
               <div class="modal-cart">
     						<h4 class="modal-cart-title"><a href="#">Седона</a></h4>
     							<p class="modal-cart-text">Информационный сайт для туристов</p>
     							<button class="button button-sedona-buy">
-                    <p class="button-text">9 900 &#8381;</p>
+                    <span class="button-text">9 900 &#8381;</span>
                   </button>
     					</div>
              </li>
 						<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-              <a href="#"><img src="img/img-pink-catalog.png" width="358px" height="576px" alt="Продуктовый лендинг  приложения для iOS и Android"></a>         
+              <a href="#"><img src="img/img-pink-catalog.png" width="358" height="576" alt=""></a>         
               <div class="modal-cart">
                 <h4 class="modal-cart-title"><a href="#">PINK APP</a></h4>
                   <p class="modal-cart-text">Продуктовый лендинг  приложения для iOS и Android</p>
                   <button class="button button-sedona-buy">
-                    <p class="button-text">9 900 &#8381;</p>
+                    <span class="button-text">9 900 &#8381;</span>
                   </button>
               </div>
              </li>
 						<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-              <a href="#"><img src="img/img-barbershop-catalog.png" width="358px" height="576px" alt="Сайт салона красоты для мужчин"></a>            
+              <a href="#"><img src="img/img-barbershop-catalog.png" width="358" height="576" alt=""></a>            
               <div class="modal-cart">
                 <h4 class="modal-cart-title"><a href="#">BARBERSHOP</a></h4>
                   <p class="modal-cart-text">Сайт салона красоты. Для мужчин, да.</p>
                   <button class="button button-sedona-buy">
-                    <p class="button-text">9 900 &#8381;</p>
+                    <span class="button-text">9 900 &#8381;</span>
                   </button>
               </div>
             </li>
 						<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-              <a href="#"><img src="img/img-mishka-catalog.png" width="358px" height="576px" alt="Интернет-магазин вязаных игрушек"></a>            
+              <a href="#"><img src="img/img-mishka-catalog.png" width="358" height="576" alt=""></a>            
             <div class="modal-cart">
               <h4 class="modal-cart-title"><a href="#">MISHKA</a></h4>
                 <p class="modal-cart-text">Интернет-магазин вязаных игрушек</p>
                 <button class="button button-sedona-buy">
-                  <p class="button-text">9 900 &#8381;</p>
+                  <span class="button-text">9 900 &#8381;</span>
                 </button>
             </div>
             </li>
 						<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-              <a href="#"><img src="img/img-aplus-catalog.png" width="358px" height="576px" alt="Лендинг курсов повышения квалификации"></a>
+              <a href="#"><img src="img/img-aplus-catalog.png" width="358" height="576" alt=""></a>
             <div class="modal-cart">
               <h4 class="modal-cart-title"><a href="#">A Plus</a></h4>
                 <p class="modal-cart-text">Лендинг курсов повышения квалификации</p>
                 <button class="button button-sedona-buy">
-                  <p class="button-text">9 900 &#8381;</p>
+                  <span class="button-text">9 900 &#8381;</span>
                 </button>
             </div> 
             </li>
   					<li class="catalog-nerds-item">
               <div class="catalog-nerds-upmarker"></div>
-              <a href="#"><img src="img/img-kvast-catalog.png" width="358px" height="576px" alt="Промо-сайт производителя крафтового кваса"></a>
+              <a href="#"><img src="img/img-kvast-catalog.png" width="358" height="576" alt=""></a>
             <div class="modal-cart">
               <h4 class="modal-cart-title"><a href="#">КВАСТ</a></h4>
                 <p class="modal-cart-text">Промо-сайт производителя крафтового кваса</p>
                 <button class="button button-sedona-buy">
-                  <p class="button-text">9 900 &#8381;</p>
+                  <span class="button-text">9 900 &#8381;</span>
                 </button>
             </div>		 
              </li>
@@ -200,8 +200,7 @@
       </div>
   	</main>
   	<footer class="page-footer main-footer">
-     
-       <section class="footer-maps">
+      <section class="footer-maps">
         <h2 class="visualy-hidden">Как нас найти на карте</h2>
         <div class="container">
         <div class="footer-contacts">
@@ -211,35 +210,50 @@
              ул. Б. Конюшенная, д. 19/8<br><br>
             <a href="+78122757575">тел. +7 (812) 275-75-75</a>
           </p>
-          <button class="button contacts-button">
-             <p class="button-text">Напишите нам</p>
-          </button>
+          <button class="button contacts-button"><span>НАПИШИТЕ НАМ</span></button>
         </div>
         <div class="map-marker"></div>
         </div>
       </section>
-
       <section class="footer-social">
         <div class="footer-social-container container">
-          <div>
+        
           <ul class="footer-social-list">
-            <li class="social-item">
-              <a  href="#"><img src="img/vk-icon.svg"></a>
-            </li>
-            <li class="social-item">
-              <a  href="#"><img src="img/fb-icon.svg"></a>
-            </li>
-            <li class="social-item">
-              <a href="#"><img src="img/insta-icon.svg"></a>
-            </li>
+            <li class="social-item"><span class="visualy-hidden">Вконтакте</span><a  href="#"><img src="img/vk-icon.svg" alt="Логотип социальной сети Вконтакте"></a></li>
+            <li class="social-item"><span class="visualy-hidden">Facebook</span><a  href="#"><img src="img/fb-icon.svg" alt="Логотип социальной сети Facebook"></a></li>
+            <li class="social-item"><span class="visualy-hidden">Instargam</span><a  href="#"><img src="img/insta-icon.svg" alt="Логотип социальной сети Instagram"></a></li>
           </ul>
-        </div>
+        
         <div>
-        <h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
+          <h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
           <p class="footer-social-subtitle">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
       </section>
     </footer>
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-login-block">
+        <div class="modal-login">
+          <p class="modal-text">Ваше имя:</p>
+          <label class="visually-hidden" for="login-name"></label>
+          <input class="modal-mail-form login-input" id="login-name" type="text" placeholder="Имя Фамилия" name="login">
+        </div>
+        <div class="modal-login">
+          <p class="modal-text">Ваш email:</p>
+          <label class="visually-hidden" for="login-login"></label>
+          <input  class="modal-mail-form login-input" id="login-login" type="email"  placeholder="email@example.com" name="email">
+         </div>
+       </div>
+         <div>
+          <p class="modal-text">Текст письма:</p>
+          <textarea class="mail-input modal-mail-form" name="comment" placeholder="В свободной форме"></textarea>
+         </div>
+        <button class="button modal-button" type="submit">ОТПРАВИТЬ</button>
+      </form>
+     <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/script.js"></script>
   </body>
   </html>
