@@ -118,6 +118,7 @@
 
 .features-button {
 	margin-top: 23px;
+	margin-left: 10px;
 	background-color: var(--basik-red);
 	width: 240px;
 	height: 50px;
@@ -262,8 +263,14 @@
 
 }
 
+.header-container {
+	width: 1218px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .main-header-logo {
-	margin-left: 20px;
+	margin-left: 37px;
 }
 
 .main-header-logo:active{
@@ -293,7 +300,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-left: 182px;
+	margin-left: 185px;
 	min-height: 30px;
 }
 
@@ -330,9 +337,10 @@
 
 /* Container */
 .container {
-	width: 1175px;
+	width: 1184px;
 	margin: 0 auto;
 	padding: 0 10px;
+	padding-left: 33px;
 }
 
 
@@ -341,7 +349,7 @@
 .features {
 	background-color: var(--basik-gray);
 	margin-top: 0px;
-	margin-left: 5px;
+	margin-left: 0px;
 }
 
 .features-container {
@@ -353,17 +361,16 @@
 .features-content {
 	display: none;
 	margin-top: 0px;
-	width: 1157px;
-	height: 431px;
+  height: 418px;
 	background-image: url("../img/nerds-index-slide1.png");
 	background-repeat:no-repeat;
-	background-position: 105%;
+	background-position: 96%;
 }
 
 .features-slogan {
 	margin-top: 0px;
-	padding-top: 65px;
-	padding-left: 15px;
+	padding-top:63px;
+	padding-left: 10px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
@@ -372,53 +379,41 @@
 
 .features-text {
 	margin-top: -27px;
+	padding-left: 10px;
 }
 
-.features-content-slide-two {
+.features-content-two {
 	display: none;
 	margin-top: 0px;
-	width: 1157px;
-	height: 431px;
+	height: 418px;
 	background-image: url("../img/nerds-index-slide2.png");
 	background-repeat:no-repeat;
-	background-position: 98%;
+	background-position: 96%;
 }
 
-.features-slogan-slide-two {
-	font-weight: 500;
-	font-size: 55px;
-	line-height: 55px;
-	color: var(--basik-black);
-}
-
-.features-content-slide-three {
-	display: block;
-	width: 1157px;
-	height: 431px;
+.features-content-three {
+	display: none;
+	height: 418px;
 	background-image: url("../img/nerds-index-slide3.png");
 	background-repeat:no-repeat;
-	background-position: 98%;
-}
-
-.features-text-slide-three {
-
-	
-}
-
-
-
-.features-slogan-slide-three {
-	padding-top: 0px;
-	font-weight: 500;
-	font-size: 55px;
-	line-height: 55px;
-	color: var(--basik-black);
+	background-position: 96%;
 }
 
 .slide-button {
 	position: absolute;
-	left: 500px;
-	bottom: 100px;
+	display: flex;
+	width: 88px;
+	height: 20px;
+	left: 513px;
+	bottom: 81px;
+}
+
+.slider-radio {
+	margin-right: 20px;
+}
+
+.slide-show {
+	display: block;
 }
 
 
@@ -427,6 +422,7 @@
 .services {
 	margin-top: 60px;
 	margin-bottom: 80px;
+	margin-left: 21px;
 }
 
 .services-title {
@@ -439,10 +435,12 @@
 .services-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 30px;
+	column-gap: 19px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	padding-bottom: 77px;
+	border-bottom: 2px solid var(--basik-gray);
 }
 
 .services-item{
@@ -450,7 +448,7 @@
 }
 
 .services-item p {
-	margin-top: -10px;
+	margin-top: -8px;
 }
 
 .services-icon-websites {
@@ -485,18 +483,17 @@
 .description-container {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	column-gap: 50px;
-	margin-top: 50px;
-	margin-bottom: 65px;
-	padding-top: 36px;
-	border-top: 2px solid var(--basik-gray);
+	column-gap: 11px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 48px;
 }
 
 
 .description-services-item {
 	position:relative;
 	margin-bottom: 20px;
-	margin-left: -35px;
+  margin-left: -35px;
 	padding-left: 35px;
 }
 
@@ -511,8 +508,8 @@
 }
 
 .description-content-title {
-	margin-top: 35px;
-	margin-left: 2px;
+	margin-top: -8px;
+	margin-left: 9px;
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
@@ -521,12 +518,12 @@
 
 .description-content-text {
 	margin-top: -11px;
-	margin-left: 2px;
+	margin-left: 9px;
 }
 
 .description-content-subtitle {
-	margin-top: 40px;
-	margin-left: 2px;
+	margin-top: 42px;
+	margin-left: 9px;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 24px;
@@ -534,7 +531,12 @@
 }
 
 .description-services-list {
-	margin-top: 27px;
+	margin-top: 23px;
+	margin-left: 6px;
+}
+
+.description-services-item {
+	margin-bottom: 24px;
 }
 
 
@@ -543,11 +545,13 @@
 	margin-left: 6px;
 	width: 360px;
 	height: 208px;
+	margin-top: -40px;
+	margin-left: 20px;
 }
 
 .description-subtitle-two {
-	margin-top: 38px;
-	margin-left: 25px;
+	margin-top: 35px;
+	margin-left: 36px;
 }
 
 .description-features-list {
@@ -556,14 +560,15 @@
 	padding: 0;
 	margin: 0;
 	list-style:none;
-	margin-top: -28px;
+	margin-top: -27px;
+	margin-left: 25px;
 	
 }
 
 .description-features-item {
 	font-size: 16px;
 	line-height: 18px;
-	margin-left: 15px;
+	margin-left: 0px;
 }
 
 
@@ -581,6 +586,10 @@
 
 /* clients */
 
+.clients {
+	margin-bottom: 78px;
+}
+
 .clients-list {
 	
 	display: grid;
@@ -589,7 +598,6 @@
 	height: 181px;
 	margin: 0;
 	padding: 0;
-	margin-top: -6px;
 	border-top: 2px solid var(--basik-gray);
 	border-bottom: 2px solid var(--basik-gray);
 }
@@ -633,10 +641,10 @@
 .footer-maps {
 	background-image: url(../img/map_1.jpg);
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-position: 52%;
 	width: 100%;
 	height: 416px;
-	margin-top: 77px;
+	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -648,7 +656,7 @@
 
 .map-marker {
 	position:absolute;
-	right: 264px;
+	right: 270px;
 	top: 85px;
 	background-image: url(../img/map-marker_1.png);
 	width: 231px;
@@ -658,7 +666,7 @@
 .footer-contacts {
 	position: absolute;
 	top: 55px;
-	left: 15px;
+	left: 44px;
 	width: 315px;
 	height: 308px;
 	background-color: var(--basik-white);
@@ -693,11 +701,12 @@
 .footer-social {
 	margin-top: 68px;
 	margin-bottom: 68px;
+	margin-left: 15px;
 }
 
 .footer-social-title {
 	margin-top: 6px;
-	margin-left: 13px;
+	margin-left: 9px;
 	margin-bottom: 0px;
 	font-size: 36px;
 	line-height: 36px;
@@ -705,7 +714,7 @@
 }
 
 .footer-social-subtitle {
-	margin-left: 14px;
+	margin-left: 9px;
 	margin-top: 10px;
 	font-size: 16px;
 	line-height: 22px;
@@ -890,7 +899,8 @@
 
 .catalog-title {
 	margin-top: 0px;
-	padding-top: 77px;
+	padding-top: 64px;
+	padding-left: 15px;
 	padding-bottom: 108px;
 	text-align: center;
 	font-weight: 500;
@@ -911,6 +921,7 @@
 
 .filters {
 	width: 265px;
+	margin-left: 16px;
 }
 
 .filter fieldset {
@@ -951,7 +962,7 @@
 
 .range-filter {
 	width: 260px;
-	margin-top: 38px;
+	margin-top: 50px;
 	margin-left: 5px;
 	margin-bottom: 20px;
 }
@@ -1096,7 +1107,7 @@
 
 /*-- Catalog --*/
 .catalog{
-	margin-left: 154px;
+	margin-left: 160px;
 }
 
 .filter-class {
@@ -1111,6 +1122,7 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
+	padding-top: 3px;
 }
 
 .filter-class-type {
@@ -1119,7 +1131,7 @@
 	padding: 0;
 	margin: 0;
 	margin-top: 25px;
-	margin-left: 260px;
+	margin-left: 268px;
 }
 
 .filter-class-type li{
@@ -1144,10 +1156,11 @@
 	padding: 0;
 	margin: 0;
 	margin-top: 25px;
-	margin-left: 35px;
+	margin-left: 20px;
 }
 
 .filter-class-pagination li{
+	margin-right: 7px;
 	opacity: 0.3;
 }
 
@@ -1169,8 +1182,8 @@
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
-	margin-top: 18px;
-	margin-bottom: 20px;
+	margin-top: 32px;
+	margin-bottom: 27px;
 }
 
 .catalog-nerds-item {
@@ -1178,7 +1191,7 @@
 	width: 358px;
 	min-height: 578px;
 	margin-right: 44px;
-	margin-bottom: 31px;
+	margin-bottom: 26px;
 	border-radius: 5px;
 }
 
@@ -1231,7 +1244,7 @@
 }
 
 .modal-cart-title a:hover {
-	color: var(--basic-red);
+	color: var(--basik-red);
 }
 
 .modal-cart-title a:active {
@@ -1260,8 +1273,8 @@
 }
 
 .catalog-pagination-item {
-	width: 47px;
-	height: 47px;
+	width: 44px;
+	height: 44px;
 	margin-right: 11px;
 	background: var(--basik-gray);
 	border-radius: 3px;
@@ -1270,7 +1283,10 @@
 
 .catalog-pagination-item a{
 	display: block;
-	padding: 10px 19px;
+	padding: 13px 19px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 
@@ -1286,12 +1302,15 @@
 }
 
 .catalog-pagination-item-next {
-	width: 260px;
-	height: 40px;
-	padding-top: 10px;
+	width: 255px;
+	height: 31px;
+	padding-top: 13px;
 	background: var(--basik-gray);
 	border-radius: 3px;
 	border: 3px solid var(--basik-gray);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .catalog-pagination-item-next:hover {

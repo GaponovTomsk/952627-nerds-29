@@ -1,3 +1,6 @@
+
+// Modal
+
 const contacts_Button = document.querySelector(".contacts-button");
 const popup = document.querySelector(".modal");
 const modal_Close = document.querySelector(".modal-close");
@@ -51,4 +54,34 @@ window.addEventListener("keydown", function (evt) {
 				popup.classList.remove("modal-show");
 			}
 	}
+});
+
+
+//slider
+
+const slideOneButton = document.querySelector(".button-slide-1");
+const slideTwoButton = document.querySelector(".button-slide-2");
+const slideThreeButton = document.querySelector(".button-slide-3");
+
+const slideOne = document.querySelector(".features-content");
+const slideTwo = document.querySelector(".features-content-two");
+const slideThree = document.querySelector(".features-content-three");
+
+
+slideOneButton.addEventListener("click", function () {
+	slideTwo.classList.remove("slide-show");
+	slideOne.classList.add("slide-show");
+	slideThree.classList.remove("slide-show");
+});
+
+slideTwoButton.addEventListener("click", function () {
+	slideTwo.classList.add("slide-show");
+	slideOne.classList.remove("slide-show");
+	slideThree.classList.remove("slide-show");
+});
+
+slideThreeButton.addEventListener("click", function () {
+	slideThree.classList.add("slide-show");
+	slideTwo.classList.remove("slide-show");
+	slideOne.classList.remove("slide-show");
 });
