@@ -212,6 +212,7 @@
 	height: 50px;
 	padding-left: 85px;
 	padding-right: 85px;
+	margin-left: 0px;
 	background-color: var(--basik-gray);
 	border: none;
 	color: var(--basik-black);
@@ -337,10 +338,11 @@
 
 /* Container */
 .container {
-	width: 1184px;
+	width: 1165px;
 	margin: 0 auto;
-	padding: 0 10px;
-	padding-left: 33px;
+	padding: 0 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 
@@ -606,8 +608,10 @@
 	margin: 0;
 	padding: 0;
 	margin-top: 55px;
+	padding-left: 5px;
 	position: relative;
 	display: block;
+	
 	text-align: center;
 }
 
@@ -921,14 +925,14 @@
 
 .filters {
 	width: 265px;
-	margin-left: 16px;
+	margin-left: 0px;
 }
 
 .filter fieldset {
 	padding: 0;
 	margin: 0;
 	border: 0;
-	margin-bottom: 35px;
+	margin-bottom: 23px;
 }
 
 .filter-option {
@@ -963,8 +967,8 @@
 .range-filter {
 	width: 260px;
 	margin-top: 50px;
-	margin-left: 5px;
-	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-bottom: 30px;
 }
 
 .filter-item legend {
@@ -972,7 +976,7 @@
 	line-height: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding-left: 5px;
+	padding-left: 0px;
 }
 
 .range-controls {
@@ -1070,6 +1074,8 @@
 }
 
 /* --Filter-checkbox --*/
+
+
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -1107,7 +1113,7 @@
 
 /*-- Catalog --*/
 .catalog{
-	margin-left: 160px;
+	margin-left: 145px;
 }
 
 .filter-class {
@@ -1160,8 +1166,11 @@
 }
 
 .filter-class-pagination li{
-	margin-right: 7px;
 	opacity: 0.3;
+}
+
+.filter-class-pagination li:not(:last-child){
+	margin-right: 10px;
 }
 
 .filter-class-pagination li:hover{
