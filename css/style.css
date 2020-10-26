@@ -338,7 +338,7 @@
 
 /* Container */
 .container {
-	width: 1165px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 0px;
 	padding-left: 20px;
@@ -924,7 +924,7 @@
 /*-- Filters --*/
 
 .filters {
-	width: 265px;
+	width: 260px;
 	margin-left: 0px;
 }
 
@@ -1113,7 +1113,8 @@
 
 /*-- Catalog --*/
 .catalog{
-	margin-left: 145px;
+	margin-left: 167px;
+	width: 760px;
 }
 
 .filter-class {
@@ -1158,7 +1159,6 @@
 
 .filter-class-pagination {
 	display: flex;
-	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	margin-top: 25px;
@@ -1170,7 +1170,7 @@
 }
 
 .filter-class-pagination li:not(:last-child){
-	margin-right: 10px;
+	margin-right: 11px;
 }
 
 .filter-class-pagination li:hover{
