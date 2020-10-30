@@ -15,10 +15,10 @@
       			<a href="#" class="main-header-logo"><img src="img/nerds-logo.png" height="65" width="160" alt="Логотип дизайн-студии 'Нёрдс'"></a>
           </div>
     			<ul class="site-navigation">
-    				<li><a href="#">СТУДИЯ</a></li>
-    				<li><a href="#">КЛИЕНТЫ</a></li>
-    				<li><a href="catalog.html">МАГАЗИН</a></li>
-    				<li><a href="#">КОНТАКТЫ</a></li>
+    				<li class="site-navigation-item current-page-studio"><a href="#">СТУДИЯ</a></li>
+    				<li class="site-navigation-item"><a href="#">КЛИЕНТЫ</a></li>
+    				<li class="site-navigation-item"><a href="catalog.html">МАГАЗИН</a></li>
+    				<li class="site-navigation-item"><a href="#">КОНТАКТЫ</a></li>
     			</ul>
           <div class="user-navigation">
       			<a class="cart-link" href="#">КОРЗИНА</a>
@@ -171,19 +171,17 @@
       <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-login-block">
         <div class="modal-login">
-          <p class="modal-text">Ваше имя:</p>
-          <label class="visually-hidden" for="login-name"></label>
+          <label class="modal-text" for="login-name">Ваше имя:</label>
           <input class="modal-mail-form login-input" id="login-name" type="text" placeholder="Имя Фамилия" name="login">
         </div>
         <div class="modal-login">
-          <p class="modal-text">Ваш email:</p>
-          <label class="visually-hidden" for="login-login"></label>
+          <label class="modal-text" for="login-login">Ваш email:</label>
           <input  class="modal-mail-form login-input" id="login-login" type="email"  placeholder="email@example.com" name="email">
          </div>
        </div>
          <div>
-          <p class="modal-text">Текст письма:</p>
-          <textarea class="mail-input modal-mail-form" name="comment" placeholder="В свободной форме"></textarea>
+          <label class="modal-text" for="modal-comment">Текст письма:</label>
+          <textarea class="mail-input modal-mail-form" name="comment" id="modal-comment" placeholder="В свободной форме"></textarea>
          </div>
         <button class="button modal-button" type="submit">ОТПРАВИТЬ</button>
       </form>
