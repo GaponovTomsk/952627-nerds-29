@@ -1406,21 +1406,16 @@
 
 
 .catalog-pagination-item:active {
-	width: 49px;
-	height: 49px;
-	border: none;
 	background-color:  var(--filter-button-gray);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	text-align: center;
-	
+	border: 3px solid var(--filter-button-gray);
 }
 
 .current-catalog-pagination-item {
 	border: 3px solid var(--very-light-gray);
 	background-color: var(--basik-white);
 }
-
-
 
 .catalog-pagination-item:active a{
 	opacity: 0.3;
