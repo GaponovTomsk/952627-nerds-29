@@ -829,30 +829,29 @@
 }
 
 .social-item {
-	padding: 23px;
-	margin-top: 3px;
-	margin-left: 6px;
-  margin-right: 8px;
-	width: 30px;
-	height: 30px;
-	background-color: var(--social-item-gray);
-	border-radius: 50%;
+	margin-left: 4px;
+  margin-right: 4px;
 }
 
 .social-item a {
 	display: block;
-	padding: 2px 2px;
+	padding: 30px 2px;
+	width: 81px;
+	height: 81px;
+	background-color: var(--social-item-gray);
+	border-radius: 50%;
+	box-sizing: border-box;
 }
 
-.social-item:hover {
+.social-item:hover a{
 	background-color: var(--hover-red);
 }
 
-.social-item:active {
+.social-item:active a{
 	background-color: var(--active-red);
 }
 
-.social-item:active a{
+.social-item:active img{
 	opacity:0.2;
 }
 
@@ -1383,12 +1382,13 @@
 }
 
 .catalog-pagination-item {
-	width: 44px;
-	height: 44px;
+	width: 50px;
+	height: 50px;
 	margin-right: 11px;
 	background: var(--basik-gray);
 	border-radius: 3px;
 	border: 3px solid var(--basik-gray);
+	box-sizing: border-box;
 }
 
 .catalog-pagination-item a{
@@ -1408,8 +1408,9 @@
 .catalog-pagination-item:active {
 	background-color:  var(--filter-button-gray);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	padding-top: 3px;
 	text-align: center;
-	border: 3px solid var(--filter-button-gray);
+	border: none;
 }
 
 .current-catalog-pagination-item {
@@ -1422,8 +1423,9 @@
 }
 
 .catalog-pagination-item-next {
-	width: 255px;
-	height: 31px;
+	box-sizing: border-box;
+	width: 260px;
+	height: 50px;
 	padding-top: 13px;
 	background: var(--basik-gray);
 	border-radius: 3px;
@@ -1440,8 +1442,7 @@
 
 .catalog-pagination-item-next:active {
 	border: none;
-	width: 261px;
-	height: 37px;
+	padding-top: 15px;
 	background-color:  var(--filter-button-gray);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
