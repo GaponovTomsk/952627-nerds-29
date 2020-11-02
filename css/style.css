@@ -209,6 +209,7 @@
 	height: 50px;
 	padding-left: 85px;
 	padding-right: 85px;
+	margin-top: 4px;
 	margin-left: 0px;
 	background-color: var(--basik-gray);
 	border: none;
@@ -1026,20 +1027,26 @@
 }
 
 .filter fieldset {
-	padding: 0;
+	padding: 1px;
 	margin: 0;
 	border: 0;
-	margin-bottom: 23px;
+	margin-bottom: 27px;
 }
 
 .filter-option {
-	margin-bottom: 19px;
+	margin-bottom: 14px;
 	padding-left: 0px;
 	opacity: 0.5;
 }
 
+
 .filter-option:hover {
 	opacity: 1;
+}
+
+
+.filter-checkbox {
+	margin-bottom: 16px;
 }
 
 .filter-input-radio:disabled + label {
