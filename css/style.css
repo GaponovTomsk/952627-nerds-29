@@ -587,7 +587,7 @@
 }
 
 .description-logo {
-	background-image: url(../img/nerds-illustration_1.png);
+	background-image: url(../img/nerds-illustration.png);
 	width: 360px;
 	height: 208px;
 	margin-top: -40px;
@@ -732,7 +732,7 @@
 
 /* page-footer */
 .footer-maps {
-	background-image: url(../img/map_1.jpg);
+	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: 52%;
 	width: 100%;
@@ -750,7 +750,7 @@
 	position:absolute;
 	right: 257px;
 	top: 85px;
-	background-image: url(../img/map-marker_1.png);
+	background-image: url(../img/map-marker.png);
 	width: 231px;
 	height: 190px;
 }
