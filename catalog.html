@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс -- Магазин</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/csscompressed.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -66,15 +66,15 @@
             <fieldset class="filter-item">
               <legend>СЕТКА:</legend>
               <ul>
-                <li class="filter-option filter-radio">
+                <li class="filter-option filter-radio" tabindex="0">
                   <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="adaptive" id="filter-adaptive" checked disabled>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-option filter-radio" tabindex="0">
                   <input class="visualy-hidden filter-input-radio filter-input"  name="type-of-grid" type="radio"  value="fixed" id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-option filter-radio" tabindex="0">
                   <input class="visualy-hidden filter-input-radio filter-input" name="type-of-grid" type="radio" value="rubber" id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>          
@@ -83,25 +83,25 @@
             <fieldset class="filter-item">
               <legend>ОСОБЕННОСТИ:</legend>
               <ul>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option filter-checkbox" tabindex="0">
                   <input class="visualy-hidden filter-input-checkbox filter-input" name="slider" type="checkbox" id="filter-slider" checked disabled>
-                  <label for="filter-slider">Слайдер</label>
+                  <label for="filter-slider" >Слайдер</label>
                 </li>
-                <li class="filter-option filter-checkbox">
-                  <input class="visualy-hidden filter-input-checkbox filter-input" name="preferences-block" type="checkbox" id="filter-preferences-box">
-                  <label for="filter-preferences-box">Блок преимуществ</label>
+                <li class="filter-option filter-checkbox" tabindex="0">
+                  <input class="visualy-hidden filter-input-checkbox filter-input" name="preferences-block" type="checkbox" id="filter-preferences-box" >
+                  <label for="filter-preferences-box" >Блок преимуществ</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option filter-checkbox" tabindex="0">
                   <input class="visualy-hidden filter-input-checkbox filter-input" name="news" type="checkbox" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
+                  <label for="filter-news" >Новости</label>
                 </li>
-                 <li class="filter-option filter-checkbox">
+                 <li class="filter-option filter-checkbox" tabindex="0">
                   <input class="visualy-hidden filter-input-checkbox filter-input" name="gallery" type="checkbox" id="filter-gallery">
-                  <label for="filter-gallery">Галерея</label>
+                  <label for="filter-gallery" >Галерея</label>
                  </li>
-                 <li class="filter-option filter-checkbox">
+                 <li class="filter-option filter-checkbox" tabindex="0">
                   <input class="visualy-hidden filter-input-checkbox filter-input" name="curt" type="checkbox" id="filter-curt">
-                  <label for="filter-curt">Корзина</label> 
+                  <label for="filter-curt" >Корзина</label> 
                  </li>
               </ul>
             </fieldset>
@@ -117,8 +117,8 @@
               <li><a href="#">ПО НАЗВАНИЮ</a></li>        
             </ul>
             <ul class="filter-class-pagination">
-              <li><a href="#">&#9660;</a></li>
-              <li><a href="#">&#9650;</a></li>  
+              <li><a href="#" title="Сортировать по убыванию">&#9660;</a></li>
+              <li><a href="#" title="Сортировать по возрастанию">&#9650;</a></li>  
             </ul>
           </div>
   				<h2 class="visualy-hidden">Готовые шаблоны</h2>
@@ -250,6 +250,6 @@
       </form>
      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/scriptcompressed.js"></script>
   </body>
   </html>

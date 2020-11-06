@@ -115,7 +115,7 @@
 
 .features-button {
 	margin-top: 23px;
-	margin-left: 10px;
+	margin-left: 8px;
 	background-color: var(--basik-red);
 	width: 240px;
 	height: 50px;
@@ -263,10 +263,11 @@
 	width: 1218px;
 	margin: 0 auto;
 	padding: 0 10px;
+	padding-top: 47px; 
 }
 
 .main-header-logo {
-	margin-left: 37px;
+	margin-left: 30px;
 }
 
 .main-header-logo:active{
@@ -296,7 +297,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-left: 185px;
+	margin-left: 182px;
 	min-height: 30px;
 }
 
@@ -345,6 +346,7 @@
 .user-navigation .cart-link {
 	position: relative;
 	padding-left:50px;
+	margin-right: 8px;
 }
 
 .cart-link::before {
@@ -364,8 +366,8 @@
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 0px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 11px;
+	padding-right: 28px;
 	box-sizing: border-box;
 }
 
@@ -388,13 +390,13 @@
   height: 418px;
 	background-image: url("../img/nerds-index-slide1.png");
 	background-repeat:no-repeat;
-	background-position: 100%;
+	background-position: 101% bottom;
 }
 
 .features-slogan {
 	margin-top: 0px;
 	padding-top:63px;
-	padding-left: 10px;
+	padding-left: 8px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
@@ -403,7 +405,7 @@
 
 .features-text {
 	margin-top: -27px;
-	padding-left: 10px;
+	padding-left: 8px;
 }
 
 .features-content-two {
@@ -412,7 +414,7 @@
 	height: 418px;
 	background-image: url("../img/nerds-index-slide2.png");
 	background-repeat:no-repeat;
-	background-position: 100%;
+	background-position: 101% bottom;
 }
 
 .features-content-three {
@@ -420,7 +422,7 @@
 	height: 418px;
 	background-image: url("../img/nerds-index-slide3.png");
 	background-repeat:no-repeat;
-	background-position: 100%;
+	background-position: 101% bottom;
 }
 
 .slide-button {
@@ -430,7 +432,7 @@
 	width: 88px;
 	height: 20px;
 	left: 511px;
-	bottom: 81px;
+	bottom: 79px;
 }
 
 .slider-radio label {
@@ -734,7 +736,7 @@
 .footer-maps {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
-	background-position: 52%;
+	background-position: 50%;
 	width: 100%;
 	height: 416px;
 	margin-top: 60px;
@@ -748,7 +750,7 @@
 
 .map-marker {
 	position:absolute;
-	right: 257px;
+	right: 266px;
 	top: 85px;
 	background-image: url(../img/map-marker.png);
 	width: 231px;
@@ -758,7 +760,7 @@
 .footer-contacts {
 	position: absolute;
 	top: 55px;
-	left: 33px;
+	left: 22px;
 	width: 315px;
 	height: 308px;
 	background-color: var(--basik-white);
